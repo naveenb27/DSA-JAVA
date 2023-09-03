@@ -66,13 +66,14 @@ public class ArrayList{
             int select = sc.nextInt();
             switch (select) {
                 case 1:
+                    System.out.println("Enter a value");
                     int val = sc.nextInt();
                     arr.insert(val);
                     break;
                 case 2:
                     System.out.println("Enter a Position: ");
                     int pos = sc.nextInt();
-                    System.out.println("Eneter a value");
+                    System.out.println("Enter a value");
                     int val1 = sc.nextInt();
                     arr.insert(pos, val1);
                     break;
@@ -80,9 +81,11 @@ public class ArrayList{
                     System.out.println("Enter a Position: ");
                     int pos1 = sc.nextInt();
                     arr.delete(pos1);
+                    break;
                 case 4:
-                    System.out.println("Array");
+                    System.out.println("Array: ");
                     arr.display();
+                    break;
                 case 5:
                     System.exit(0);
             }
