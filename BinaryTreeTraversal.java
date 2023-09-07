@@ -55,22 +55,22 @@ class BTS{
     }
     private void postOrderTraversal(Node node){
         if (node != null) {
-            postOrderTraversal(node.left);//7
-            System.out.println(node.val);
+            postOrderTraversal(node.left);
             postOrderTraversal(node.right);
+            System.out.println(node.val);
         }
     }
     private void preOrderTraversal(Node node){
         if (node != null) {
-            preOrderTraversal(node.left);//7
             System.out.println(node.val);
+            preOrderTraversal(node.left);
             preOrderTraversal(node.right);
         }
     }
 
 }
 
-public class BinaryTreeTraversal{
+public class Main{
     public static void main(String args[]){
         BTS b = new BTS();
         b.insert(10);
