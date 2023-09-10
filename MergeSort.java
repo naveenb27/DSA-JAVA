@@ -32,8 +32,8 @@ class MergeSort {
         for(int i=0; i<mid;i++){
             left[i] = arr[i];
         }
-        for(int i=mid; i<len-1; i
-            right[i] = arr[i-mid];
+        for(int i=mid; i<len; i++){
+            right[i-mid] = arr[i];
         }
         mergeSort(left);
         mergeSort(right);
@@ -45,7 +45,7 @@ class MergeSort {
         }
     }
     public static void main(String[] args) {
-        int[] arr = {3, 7, 1, 2};
+        int[] arr = {3, 7, 1, 2, 0};
         
         mergeSort(arr);
         display(arr);
