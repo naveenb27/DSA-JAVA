@@ -1,4 +1,4 @@
-  public class QuickSort{
+public class QuickSort{
     public static void quick(int arr[], int start, int end){
         if(end<=start) return;
 
@@ -16,12 +16,11 @@
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
-            i++;
-            int temp = arr[i];
-            arr[i] = arr[end];
-            arr[end] = temp;
         }
-
+        i++;
+        int temp = arr[i];
+        arr[i] = arr[end];
+        arr[end] = temp;
         return i;
     }
     public static void display(int[] arr){
